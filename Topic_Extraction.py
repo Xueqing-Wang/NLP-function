@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 df =pd.read_csv("E:\\OneDrive\\Software\\python_code\\Topic_Extraction\\input\\HillaryEmails.csv",encoding='utf8')
-# 清楚原邮件数据中的Nan值
+# 清除原邮件数据中的Nan值
 df = df[['Id', 'ExtractedBodyText']].dropna()
 
 # 正则表达式 清楚无意义的数据
